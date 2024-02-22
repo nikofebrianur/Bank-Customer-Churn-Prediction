@@ -1,4 +1,4 @@
-# Submission 2: Bank Customer Churn
+# Dicoding ML Ops Submission 2: Bank Customer Churn Prediction
 Nama: Niko Febrianur
 
 Username dicoding: nikofebrianur
