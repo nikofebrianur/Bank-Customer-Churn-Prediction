@@ -6,7 +6,7 @@ Username dicoding: nikofebrianur
 | | Deskripsi |
 | ----------- | ----------- |
 | Dataset | [Bank Customer Churn](https://www.kaggle.com/datasets/radheshyamkollipara/bank-customer-churn) |
-| Masalah | Deskripsi masalah yang di angkat |
+| Masalah | Bisnis perbankan dihadapkan dengan tantangan untuk mengelola tingkat churn pelanggan, di mana pelanggan meninggalkan bank. Oleh karena itu, masalah yang diangkat dalam proyek ini adalah untuk membangun model machine learning yang dapat memprediksi kemungkinan churn pelanggan berdasarkan atribut yang diberikan dalam dataset. Bank memiliki kepentingan bisnis untuk memahami faktor-faktor apa yang mempengaruhi keputusan pelanggan untuk meninggalkan layanan mereka. Dengan mengetahui hal ini, bank dapat mengembangkan program loyalitas dan kampanye retensi yang efektif untuk mempertahankan sebanyak mungkin pelanggan. Mengurangi tingkat churn juga dapat menghasilkan penghematan biaya, karena mendaftarkan pelanggan baru biasanya lebih mahal daripada mempertahankan pelanggan yang sudah ada. |
 | Solusi machine learning | Deskripsi solusi machine learning yang akan dibuat |
 | Metode pengolahan | Deskripsi metode pengolahan data yang digunakan |
 | Arsitektur model | Deskripsi arsitektur model yang diguanakan |
