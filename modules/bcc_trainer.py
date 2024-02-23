@@ -113,6 +113,10 @@ def run_fn(fn_args):
     train_dataset = input_fn(fn_args.train_files, tf_transform_output, 64)
     eval_dataset = input_fn(fn_args.eval_files, tf_transform_output, 64)
 
+    # Calculate the number of steps based on the size of the dataset and batch size
+    train_steps = fn_args.train_steps or int(fn_args.train_steps_per_epoch * len(train_dataset))
+    eval_steps = fn_args.eval_steps or int(fn_args.eval_steps_per_epoch * len(eval_dataset))
+
     model = get_model()
 
     log_dir = os.path.join(os.path.dirname(fn_args.serving_model_dir), "logs")
@@ -122,9 +126,9 @@ def run_fn(fn_args):
 
     model.fit(
         train_dataset,
-        steps_per_epoch=fn_args.train_steps,
+        steps_per_epoch=train_steps,
         validation_data=eval_dataset,
-        validation_steps=fn_args.eval_steps,
+        validation_steps=eval_steps,
         callbacks=[tensorboard_callback],
         epochs=10
     )
