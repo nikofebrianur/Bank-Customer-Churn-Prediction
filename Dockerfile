@@ -1,10 +1,9 @@
 FROM tensorflow/serving:latest
  
-COPY ./output/serving_model /models/bcc-model
-COPY ./config /model_config
+COPY ./outputs/serving_model/ /models/bcc-model
 ENV MODEL_NAME=bcc-model
- 
-ENV MONITORING_CONFIG="/model_config/prometheus.config"
+
+ENV MONITORING_CONFIG="./config/prometheus.config"
 ENV PORT=8501
 RUN echo '#!/bin/bash \n\n\
 env \n\
