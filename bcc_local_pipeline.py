@@ -15,7 +15,7 @@ TRAINER_MODULE_FILE = "modules/bcc_trainer.py"
 # requirement_file = os.path.join(root, "requirements.txt")
 
 # pipeline outputs
-OUTPUT_BASE = "output"
+OUTPUT_BASE = "outputs"
 serving_model_dir = os.path.join(OUTPUT_BASE, "serving_model")
 pipeline_root = os.path.join(OUTPUT_BASE, PIPELINE_NAME)
 metadata_path = os.path.join(pipeline_root, "metadata.sqlite")
